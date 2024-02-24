@@ -55,6 +55,9 @@
                                         </constraints>
                                         <color key="minimumTrackTintColor" red="0.63529413940000001" green="0.63137257099999999" blue="0.85098040100000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="thumbTintColor" red="0.63529413940000001" green="0.63137257099999999" blue="0.85098040100000005" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <connections>
+                                            <action selector="heightSliderChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="J9p-3P-p63"/>
+                                        </connections>
                                     </slider>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="184" translatesAutoresizingMaskIntoConstraints="NO" id="7hO-Mf-RTz">
                                         <rect key="frame" x="0.0" y="594" width="361" height="25"/>
@@ -83,6 +86,9 @@
                                         </constraints>
                                         <color key="minimumTrackTintColor" red="0.63529413940000001" green="0.63137257099999999" blue="0.85098040100000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="thumbTintColor" red="0.63529413940000001" green="0.63137257099999999" blue="0.85098040100000005" alpha="0.49474855130000001" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <connections>
+                                            <action selector="weightSliderChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="BbO-Ky-smb"/>
+                                        </connections>
                                     </slider>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdA-ar-Zfk">
                                         <rect key="frame" x="0.0" y="699" width="361" height="60"/>
@@ -100,6 +106,9 @@
                                                 <integer key="value" value="15"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="calculateButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rrD-wL-4ci"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -117,6 +126,12 @@
                             <constraint firstItem="o1M-Kl-2SK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="tUy-nB-Z3j"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="heightLabel" destination="5Um-Pb-47D" id="qdR-79-zYs"/>
+                        <outlet property="heightSlider" destination="QWm-37-q9K" id="pf8-FD-LHS"/>
+                        <outlet property="weightLabel" destination="Ojx-0a-5Wh" id="G8R-e0-wZ2"/>
+                        <outlet property="weightSlider" destination="gsF-qy-lSZ" id="jRh-00-h3y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
